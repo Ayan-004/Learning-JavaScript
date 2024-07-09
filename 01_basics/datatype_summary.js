@@ -28,4 +28,28 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
+
+//-------------------------------------------------------------------------------------------------------------------------------
+
+// Stack(Primitive), Heap(Non-Primitive)
+
+let myUserName = "ayan2004"
+
+let newUserName = myUserName
+newUserName = "ayan123"
+// console.log(newUserName);
+// console.log(myUserName);
+
+
+let userOne = {
+    email:"ayyanjsk@gmail.com",
+    age:20
+}
+
+
+let userTwo = userOne
+userTwo.email = "ayyansaikh47@gamil.com"
+console.log(userTwo.email);
+console.log(userOne.email);
+
