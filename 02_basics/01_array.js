@@ -27,9 +27,10 @@ const Arr2 = new Array(1, 2, 3, 4, 5)
 
 
 const myn1 = myArr.slice(1, 3)
-console.log("A ", myArr);
-console.log(myn1);
+// console.log("A ", myArr);
+// console.log(myn1);
 
 const myn2 = myArr.splice(1, 3)
-console.log("B ", myArr);
-console.log(myn2);
+// console.log("B ", myArr);
+// console.log(myn2);
+
