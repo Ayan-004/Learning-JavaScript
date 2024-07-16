@@ -47,9 +47,21 @@ const user = [
 
 // console.log(user[1].email);
 
-console.log(InstaUser);
-console.log(Object.keys(InstaUser));
-console.log(Object.values(InstaUser));
-console.log(Object.entries(InstaUser));
+// console.log(InstaUser);
+// console.log(Object.keys(InstaUser));
+// console.log(Object.values(InstaUser));
+// console.log(Object.entries(InstaUser));
 
-console.log(InstaUser.hasOwnProperty("isLoggedoff"));
+// console.log(InstaUser.hasOwnProperty("isLoggedoff"));
+
+const course = {
+    coursename: "JavaScript",
+    price: "999",
+    courseInstructor: "Ayan"
+}
+
+// course.courseInstructor
+
+//de-structure
+const {courseInstructor: instructor} =course
+// console.log(instructor);
