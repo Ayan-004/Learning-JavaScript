@@ -9,7 +9,7 @@ const startOver = document.querySelector(".resultParas")
 
 const p = document.createElement('p')
 
-let prevGuess = ''
+let prevGuess = []
 let numGuess = 1
 
 let playGame = true
@@ -31,8 +31,8 @@ function validateGuess(guess){
   } else if(guess > 100){
     alert('Please enter a number less than 100')
   } else {
-    prevGuess.push
-    if(numGuess === 11){
+    prevGuess.push(guess)
+    if(numGuess === 9){
       displayGuess(guess)
       displayMessage(`Game Over. Random Number was ${randomNumber}`)
       endGame()
@@ -65,7 +65,7 @@ function displayMessage(message) {
   lowOrHi.innerHTML = `<h2>${message}</h2>`
 }
 
-function endGame(guess) {
+function endGame() {
   userInput.value = '';
   userInput.setAttribute('disabled', '')
   p.classList.add('button')
@@ -76,8 +76,8 @@ function endGame(guess) {
   newGame()
 }
 
-function newGame(guess) {
-  const newGameButton = document.querySelector('newGame')
+function newGame() {
+  const newGameButton = document.querySelector('#newGame')
   newGameButton.addEventListener('click', function(e) {
   randomNumber = parseInt(Math.random() * 100 + 1)
   prevGuess = []
