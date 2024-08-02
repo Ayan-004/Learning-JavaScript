@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Learning to create websites Javascript from Youtube</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const printText = document.querySelector('#start').addEventListener('click', function(){
+           pause = setInterval(function(){
+            console.log('Ayan', Date.now());
+           }, 1000)
+    })
+
+    const stopText = document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(pause)
+        console.log('Stopped');
+        
+    })
+</script>
+</html>
