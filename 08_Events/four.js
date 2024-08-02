@@ -7,15 +7,12 @@ const randomColor = function() {
     return color
 }
 
-const hexValue = randomColor
-const hexCode = document.querySelector('#hexCode')
-
 let pauseColor;
 const startChangingColor = function(){
     if(!pauseColor){
         pauseColor = setInterval(function(){
             document.body.style.backgroundColor = randomColor()
-        hexCode.innerHTML = `${hexValue}`
+        hexCode.innerHTML = `${randomColor()}`
         }, 1000)
     }
 }
